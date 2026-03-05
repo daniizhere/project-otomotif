@@ -27,7 +27,6 @@ grid-template-rows:150px 1fr 120px;
 min-height:100vh;
 }
 
-
 header{
 grid-area:header;
 text-align:center;
@@ -35,33 +34,11 @@ padding:20px;
 background:#111827;
 }
 
-
 nav{
 grid-area:nav;
 padding:20px;
 background:#020617;
-border-right:3px solid #334155;
 }
-
-nav h2{
-margin-top:0;
-color:#ef4444;
-}
-
-nav a{
-display:block;
-color:#cbd5f5;
-text-decoration:none;
-padding:10px 0;
-border-bottom:1px solid #1e293b;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#ef4444;
-padding-left:8px;
-}
-
 
 main{
 grid-area:content;
@@ -69,19 +46,30 @@ padding:30px;
 background:#020617;
 }
 
-
 aside{
 grid-area:sidebar;
 padding:20px;
 background:#020617;
 }
 
+/* FOOTER MODIFIKASI */
 
 footer{
 grid-area:footer;
 text-align:center;
 padding:20px;
-background:#111827;
+border-top:3px solid #ef4444;
+background:#020617;
+}
+
+footer h3{
+margin:5px;
+font-size:16px;
+}
+
+footer p{
+margin:5px;
+font-size:14px;
 }
 
 </style>
@@ -97,15 +85,12 @@ background:#111827;
 </header>
 
 <nav>
-
 <h2>Navigation</h2>
-
 <a href="#">Beranda</a>
 <a href="#">Jenis Kendaraan</a>
 <a href="#">Teknologi Mesin</a>
 <a href="#">Perawatan</a>
 <a href="#">Tentang</a>
-
 </nav>
 
 <main>
@@ -130,7 +115,12 @@ background:#111827;
 
 <footer>
 
-<p>Made by Ramadani | Alif Hilman | Fandira | Finsa | Ibnu | Rasya</p>
+<h3>
+Made by | Ramadani | Alif Hilman | Fandira Alif Maulana |
+Finsa Ananda | Ibnu Halim Lase | Rasya Anggara Wijaya
+</h3>
+
+<p>© 2026</p>
 
 </footer>
 
