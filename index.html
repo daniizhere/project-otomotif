@@ -8,66 +8,41 @@
 
 <body>
 
-<div class="container">
-
 <header>
-
 <h1>Website Edukasi Otomotif</h1>
 <p>Pengenalan teknologi kendaraan untuk pelajar</p>
-
-<div class="mobil">🏎️</div>
-
 </header>
 
-
 <nav>
-
 <h2>Navigation</h2>
-
 <a href="#">Beranda</a>
 <a href="#">Jenis Kendaraan</a>
 <a href="#">Teknologi Mesin</a>
 <a href="#">Perawatan</a>
 <a href="#">Tentang</a>
-
 </nav>
-
 
 <main>
 
 <h2>Materi Dasar Otomotif</h2>
 
-<div class="card">
 <h3>Mesin Kendaraan</h3>
 <p>Mesin menghasilkan tenaga yang membuat kendaraan bisa bergerak.</p>
-</div>
 
-<div class="card">
 <h3>Sistem Pengereman</h3>
-<p>Rem berfungsi memperlambat dan menghentikan kendaraan agar tetap aman.</p>
-</div>
+<p>Rem berfungsi memperlambat dan menghentikan kendaraan.</p>
 
-<div class="card">
 <h3>Perawatan Kendaraan</h3>
-<p>Perawatan rutin seperti mengganti oli dan mengecek rem membuat kendaraan lebih awet.</p>
-</div>
-
-<div class="card">
-<h3>Teknologi Kendaraan</h3>
-<p>Teknologi seperti ABS dan sensor keselamatan membantu meningkatkan keamanan berkendara.</p>
-</div>
+<p>Perawatan rutin membuat kendaraan lebih awet.</p>
 
 </main>
-
 
 <aside>
 
 <h2>Informasi</h2>
 
-<p>Teknologi otomotif modern:</p>
-
 <ul>
-<li>ABS (Anti-lock Braking System)</li>
+<li>ABS</li>
 <li>Airbag</li>
 <li>Sensor Parkir</li>
 <li>Kamera Mundur</li>
@@ -75,140 +50,12 @@
 
 </aside>
 
-
 <footer>
-
-<h3>Made by | Ramadani | Alif Hilman | Fandira Alif Maulana | Finsa Ananda | Ibnu Halim Lase | Rasya Anggara Wijaya | 
-© 2026</h3>
-
+<p>Made by Ramadani | Alif Hilman | Fandira | Finsa | Ibnu | Rasya</p>
 </footer>
 
-</div>
-
 </body>
-
-<style>
-
-body{
-margin:0;
-font-family:Segoe UI, sans-serif;
-background:#0f172a;
-color:white;
-}
-
-/* GRID LAYOUT */
-
-.container{
-display:grid;
-
-grid-template-areas:
-"header header header"
-"nav content sidebar"
-"footer footer footer";
-
-grid-template-columns: 1fr 2fr 1fr;
-grid-template-rows:150px 1fr 120px;
-
-min-height:100vh;
-}
-
-/* HEADER */
-
-header{
-grid-area:header;
-background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover no-repeat;
-position:relative;
-text-align:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-border-bottom:4px solid #ef4444;
-}
-
-header::before{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.7);
-}
-
-header h1, header p{
-position:relative;
-z-index:2;
-margin:5px;
-}
-
-/* MOBIL BERGERAK */
-
-.mobil{
-position:absolute;
-bottom:10px;
-font-size:38px;
-animation:jalan 8s linear infinite;
-z-index:2;
-}
-
-@keyframes jalan{
-0%{right:-60px;}
-100%{right:100%;}
-}
-
-/* NAVIGATION */
-
-nav{
-grid-area:nav;
-padding:20px;
-border-right:3px solid #334155;
-background:#020617;
-}
-
-nav h2{
-margin-top:0;
-color:#ef4444;
-}
-
-nav a{
-display:block;
-color:#cbd5f5;
-text-decoration:none;
-padding:10px 0;
-border-bottom:1px solid #1e293b;
-}
-
-nav a:hover{
-color:#ef4444;
-}
-
-/* CONTENT */
-
-main{
-grid-area:content;
-padding:30px;
-border-right:3px solid #334155;
-background:#020617;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-margin-bottom:20px;
-border-radius:8px;
-border-left:4px solid #ef4444;
-}
-
-/* SIDEBAR */
-
-aside{
-grid-area:sidebar;
-padding:20px;
-background:#020617;
-}
-
-aside ul{
-padding-left:18px;
-}
-
+</html>
 /* FOOTER */
 
 footer{
