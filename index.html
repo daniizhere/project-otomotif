@@ -29,40 +29,9 @@ min-height:100vh;
 
 header{
 grid-area:header;
-background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover no-repeat;
-position:relative;
 text-align:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-border-bottom:4px solid red;
-}
-
-header::before{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.7);
-}
-
-header h1,header p{
-position:relative;
-z-index:2;
-}
-
-/* mobil animasi */
-
-.mobil{
-position:absolute;
-bottom:10px;
-font-size:38px;
-animation:jalan 8s linear infinite;
-}
-
-@keyframes jalan{
-0%{right:-60px;}
-100%{right:100%;}
+padding:20px;
+background:#111827;
 }
 
 nav{
@@ -77,32 +46,30 @@ padding:30px;
 background:#020617;
 }
 
-
-
 aside{
 grid-area:sidebar;
 padding:20px;
 background:#020617;
-border-left:3px solid #334155;
 }
 
-aside h2{
-color:#ef4444;
-}
-
-aside ul{
-padding-left:18px;
-}
-
-aside li{
-margin-bottom:10px;
-}
+/* FOOTER MODIFIKASI */
 
 footer{
 grid-area:footer;
 text-align:center;
 padding:20px;
-background:#111827;
+border-top:3px solid #ef4444;
+background:#020617;
+}
+
+footer h3{
+margin:5px;
+font-size:16px;
+}
+
+footer p{
+margin:5px;
+font-size:14px;
 }
 
 </style>
@@ -137,10 +104,8 @@ background:#111827;
 
 <h2>Informasi</h2>
 
-<p>Teknologi otomotif modern:</p>
-
 <ul>
-<li>ABS (Anti-lock Braking System)</li>
+<li>ABS</li>
 <li>Airbag</li>
 <li>Sensor Parkir</li>
 <li>Kamera Mundur</li>
@@ -150,7 +115,12 @@ background:#111827;
 
 <footer>
 
-<p>Made by Ramadani | Alif Hilman | Fandira | Finsa | Ibnu | Rasya</p>
+<h3>
+Made by | Ramadani | Alif Hilman | Fandira Alif Maulana |
+Finsa Ananda | Ibnu Halim Lase | Rasya Anggara Wijaya
+</h3>
+
+<p>© 2026</p>
 
 </footer>
 
